@@ -3,11 +3,10 @@ charset-normalizer==2.0.12
 click==8.0.4
 convertapi==1.4.0
 Flask==2.0.3
-idna==3.3
 itsdangerous==2.1.1
 Jinja2==3.0.3
 MarkupSafe==2.1.0
-idna==3.3
+idna==3.0
 pyaes==1.6.1
 pyasn1==0.4.8
 python-decouple==3.5
