@@ -18,7 +18,7 @@ run flsk.py with
 ```sh
 python flsk.py
 ```
-and then go to http://localhost:5000 and send your 2 pdf files
+and then go to http://127.0.0.1:5000 and send your 2 pdf files
 and then you will be redirect to another page.
 
 ### Step 4:
