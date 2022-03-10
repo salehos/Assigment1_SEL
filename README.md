@@ -1,7 +1,7 @@
 # Assignment1_SEL
 
 
-## how to use,
+## how to use:
 
 ### Step 1:
 
