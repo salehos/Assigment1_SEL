@@ -1,4 +1,4 @@
-# Assignment1_SEL
+# A PDF merger
 
 
 ## how to use:
