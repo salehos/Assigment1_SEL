@@ -1,9 +1,6 @@
 import telebot
 
-
-class OutPutMessages:
-    start_message = "Oww!hi"
-    about_us = "We can merge pdf files for you:)"
+from constants import OutPutMessages
 
 
 class BotConfiguration:
