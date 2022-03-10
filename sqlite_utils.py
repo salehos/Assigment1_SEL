@@ -41,6 +41,8 @@ class SqliteQueryUtils:
             user = list(user)
             if len(user) == 1:
                 file_ids = user[0][1].split(",")
+                if "" in file_ids:
+                    file_ids.remove("")
                 file_ids.append(file_id)
                 file_ids = ",".join(file_ids)
                 conn.execute(f"""UPDATE USER_HISTORY set pdf_file_ids='{file_ids}' WHERE username='{username}'""")
@@ -59,7 +61,7 @@ class SqliteQueryUtils:
             if len(user) == 1:
                 conn.execute(f"""UPDATE USER_HISTORY set state={state}, pdf_file_ids='' WHERE username='{username}'""")
             elif len(user) == 0:
-                raise Exception("No user found!")
+                conn.execute(f"""INSERT INTO USER_HISTORY (username) VALUES ('{username}')""")
             else:
                 raise Exception("Multiple user found with this username!")
 
